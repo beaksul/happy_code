@@ -1,0 +1,32 @@
+$brown: #694d3a;
+$light_brown: #fbeadb;
+
+
+$tablet: 1024px;
+$pc: 1024px;
+$mobile-min: 380px;
+$mobile-max: 767px;
+
+@mixin pc{
+  @media screen and (min-width: $pc){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media screen and (max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (max-width: $mobile-max){
+    @content;
+  }
+}
+
+@mixin mobile-min{
+  @media screen and (max-width: $mobile-min){
+    @content;
+  }
+}
