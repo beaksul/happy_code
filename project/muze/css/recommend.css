@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+.muze-nav ul li:nth-of-type(5) a{
+    color: #ffffff;
+    font-weight: bold;
+}
+.muze-nav ul li:nth-of-type(5)::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    width: 72px;
+    height: 3px;
+    background-color: #ffffff;
+}
+.muze-wrap{
+    width: 355px;
+    height: 100%;
+    margin: 0 auto;
+}
+.muze-recommend{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.muze-recommend .title p{
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+.mix{
+    height: 170px;
+}
+.muze-recommend .swiper-slide img{
+    width: 110px;
+    height: 110px;
+}
+.muze-recommend .swiper-slide p{
+    width: 110px;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.swiper-slide p:nth-of-type(1){
+    margin-top: 8px;
+}
+.swiper-slide p:nth-of-type(2){
+    font-size: 11px;
+    margin-top: 5px;
+}
+.swiper-scrollbar{
+    top: 130px;
+}
+.swiper-slide-active{
+    width: 110px;
+}
+/* 믹스 */
+
+.playlist .title,
+.like .title,
+.genre .title{
+    margin-top: 10px;
+}

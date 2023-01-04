@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #000;}
+    
+body{
+    /* background: linear-gradient(to right, #a509f7, #fbaf4b); */
+    background-color: #dbcae8;
+    position: relative;
+    font-family: 'NanumSquare', sans-serif !important;
+    overflow-x: hidden;
+}
+
+.muze-top{
+    /* width: 100%; */
+    height: 21px;
+    margin: 5% 2%;
+    line-height: 30px;
+}
+.muze-top .top{
+    width: 32%;
+    height: 100%;
+    float: left;
+}
+.muze-top .top:nth-child(3){
+    float: right;
+    text-align: right;
+    position: relative;
+    right: 10px;
+}
+.muze-top .top img{
+    width: 26px;
+    height: 21px;
+}
+.muze-top .top:nth-child(2){
+    text-align: center;
+    height: 21px;
+    margin: 0 auto;
+}
+.muze-top .top:nth-child(2) img{
+    width: 80px;
+}
+.muze-nav{
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #fff;
+}
+.muze-nav ul{
+    text-align: center;
+}
+.muze-nav ul li{
+    padding: 0 10px;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.muze-nav ul li a{
+    color: #fff;
+}
+/* 네비 */
+/* 푸터 */
+.footer{
+    width: 100%;
+    height: 130px;
+    background-color: #363636;
+    margin-top: 20px;
+}
+.footer .top{
+    height: 40px;
+    padding: 10px 10px;
+}
+.footer .top img{
+    width: 30px;
+    height: 30px;
+}
+.footer .top .button{
+    position: relative;
+}
+.footer .top .button p{
+    color: #fff;
+    margin-top: -30px;
+    text-align: right;
+    margin-right: 18px;
+}
+ion-icon[name="chevron-up-circle-outline"]{
+    color: #fff;
+    font-size: 19px;
+    position: absolute;
+    right: 50px;
+    top:0;
+}
+.footer .bottom{
+height: 40px;
+    text-align: center;
+}
+.footer .bottom ul li{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+.footer .bottom ul li a{
+    font-size: 12px;
+    color: #fff;
+}
+ion-icon[name="chevron-down-outline"]{
+    color: #fff;
+    position: absolute;
+    right: -13px;
+    top: 6px;
+    font-size: 13px;
+}
+.footer .click{
+    width: 100%;
+    height: 120px;
+    background-color: #363636;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+}
+.footer .click p{
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+}
+/* 푸터 */
+/* 햄버거박스 */
+.bgc{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    left: 0;
+    top: 0;
+    z-index: 9;
+    display: none;
+}
+.hamburger-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 99;
+    transition: 1s;
+}
+.hamburger-box.on{
+    left: 0;
+}
+.hamburger-box .content-box{
+    width: 340px;
+    height: 100%;
+    background-color: #fff;
+    left: -100%;
+}
+.hamburger-box .content-box > img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 8px;
+    top: 15px;
+}
+.hamburger-box .content-box .plofile{
+    width: 100%;
+    height: 140px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.hamburger-box .content-box .plofile .left img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.hamburger-box .content-box .plofile .right{
+    padding-top: 30px;
+    padding-left: 110px;
+}
+.hamburger-box .content-box .plofile .right p{
+    font-size: 13px;
+    line-height: 19px;
+}
+.hamburger-box .content-box .plofile .right p:nth-of-type(1){
+    font-size: 16px;
+    margin-left: 2px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+.hamburger-box .content-box .menu{
+    width: 100%;
+    height: 450px;
+    padding-left: 20px;
+}
+.hamburger-box .content-box .menu p{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.hamburger-box .content-box .menu p:nth-of-type(7){
+    margin-top: 45px;
+}
+.hamburger-box .content-box .content{
+    width: 100%;
+    height: 222px;
+    padding: 27px 4px;
+}
+.hamburger-box .content-box .content .box{
+    height: 100%;
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+}
+.hamburger-box .content-box .content .box img{
+    width: 70px;
+    height: 70px;
+}
+.hamburger-box .content-box .content .box p{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* 햄버거박스 */
+/* 검색버튼 */
+.search-box{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 99;
+}
+.search-box > img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+.search-box .content{
+    width: 350px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 39px;
+    position: relative;
+}
+.search-box .content .txt{
+    width: 75%;
+    height: 70%;
+    border-bottom: 1px solid #000;
+    margin-left: 30px;
+}
+.search-box .content .txt input{
+    margin-top: 25px;
+    font-size: 18px;
+    border: 0px;
+}
+.search-box .content > img{
+    width: 26px;
+    height: 23px;
+    position: absolute;
+    right: 26px;
+    top: 20px;
+}
+/* 검색버튼 */
+/* 플레이 픽스 */
+.play{
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    z-index: 99;
+    left: 200%;
+}
+.play.on{
+    left: 0;
+}
+.play .content-box{
+    width: 350px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    box-shadow: 6px 6px 6px rgba(126, 126, 126, 0.349);
+}
+.play .content-box > img{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 8px;
+    float: left;
+}
+.play .content-box .content{
+    margin-left: 80px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.play .content-box .content p:nth-of-type(1){
+    font-size: 12px;
+    display: inline;
+}
+.play .content-box .content p:nth-of-type(2){
+    font-size: 11px;
+    color: #363636;
+    width: 180px;
+    display: inline-block;
+}
+.play .content-box .button img{
+    float: left;
+}
+.play .content-box .button img:nth-of-type(1){
+    width: 13px;
+    height: 23px;
+    position: absolute;
+    bottom: 18px;
+    left: 270px;
+}
+.play .content-box .button img:nth-of-type(2){
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+}
+/* 플레이 픽스 */
+/* 픽스 아이콘 */
+.fix-icon{
+    height: 100px;
+    bottom: 20px;
+    right: 0;
+    position: fixed;
+    z-index: 99;
+}
+.fix-icon .app img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 75px;
+}
+.fix-icon .play-b img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 15px;
+}
+/* 픽스 아이콘 */

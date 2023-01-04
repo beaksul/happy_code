@@ -1,0 +1,771 @@
+@charset "utf-8";
+
+    
+    *{margin: 0; padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #000;}
+    
+    body{
+        /* background: linear-gradient(to right, #a509f7, #fbaf4b); */
+        background-color: #dbcae8;
+        position: relative;
+        font-family: 'NanumSquare', sans-serif !important;
+        overflow-x: hidden;
+    }
+    .muze-top{
+        /* width: 100%; */
+        height: 21px;
+        margin: 5% 2%;
+        line-height: 30px;
+    }
+    .muze-top .top{
+        width: 32%;
+        height: 100%;
+        float: left;
+    }
+    .muze-top .top:nth-child(3){
+        float: right;
+        text-align: right;
+        position: relative;
+        right: 10px;
+    }
+    .muze-top .top img{
+        width: 26px;
+        height: 21px;
+    }
+    .muze-top .top:nth-child(2){
+        text-align: center;
+        height: 21px;
+        margin: 0 auto;
+    }
+    .muze-top .top:nth-child(2) img{
+        width: 80px;
+    }
+    .muze-nav{
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid #fff;
+    }
+    .muze-nav ul{
+        text-align: center;
+    }
+    .muze-nav ul li{
+        padding: 0 10px;
+        font-size: 13px;
+        color: #fff;
+        position: relative;
+        display: inline-block;
+    }
+    .muze-nav ul li a{
+        color: #fff;
+    }
+    .muze-nav ul li:nth-of-type(1) a{
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .muze-nav ul li:nth-of-type(1)::after{
+        content: "";
+        position: absolute;
+        left: 10.2px;
+        top: 18px;
+        width: 11.8px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+    /* 네비 */
+    /* 배너 */
+    .main_home .banner{
+        width: 100%;
+        height: 156px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .main_home .banner .banner-wrap{
+        width: 400%;
+        height: 100%;
+        position: relative;
+    }
+    .main_home .banner .banner-wrap .banner-item{
+        width: 25%;
+        float: left;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .main_home .banner .banner-wrap .banner-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* 배너 */
+    /* 컨텐츠영역 */
+    .main_home .muze-wrap{
+        width: 355px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    /* 컨텐츠영역 */
+    /* 최신앨범 */
+    .newalbum{
+        width: 100%;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .title{
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .title p{
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .newalbum .newalbum-img{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .newalbum .newalbum-img img{
+        width: 80px;
+        height: 80px;
+    }
+    /* 최신앨범 */
+    /* 뮤즈차트 */
+    .muze-chart{
+        width: 100%;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        float: left;
+    }
+    .muze-chart .title p{
+        width: 50%;
+        height: 100%;
+        font-size: 13px;
+        float: left;
+    }
+    .muze-chart .title p:nth-of-type(2){
+        text-align: right;
+    }
+    .muze-chart .top100-list{
+        width: 100%;
+        height: 58px;
+    }
+    .muze-chart .top100-list .number{
+        font-weight: bold;
+        display: inline;
+        float: left;
+        padding-top: 15px;
+    }
+    .muze-chart .top100-list .p-title{
+        font-weight: bold;
+        font-size: 12px;
+        width: 280px;
+    }
+    .muze-chart .top100-list .p-artist{
+        font-size: 11px;
+        width: 280px;
+        color: #646464;
+    }
+    .muze-chart .top100-list .p-title,
+    .muze-chart .top100-list .p-artist{
+        padding-top: 6px;
+    }
+    .muze-chart .top100-list .album{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 0 12px;
+    }
+    .muze-chart .top100-list img{
+        float: right;
+        width: 15px;
+        height: 20px;
+        margin-top: -32px;
+    }
+    /* 뮤즈차트 */
+    /* 배너 */
+    .main_home .mid-banner img{
+        width: 100%;
+        height: 156px;
+        margin-top: 20px;
+    }
+    /* 배너 */
+    /* 노래추천 */
+    .recommend-song{
+        width: 100%;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+    .recommend-song .slick {
+        max-width: 350px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .recommend-song .slick .slick-slide{
+        margin: 10px 20px;
+    }
+    .recommend-song .slick .slide-item{
+        width: 130px;
+    }
+    .recommend-song .slick .slide-item img{
+        width: 100%;
+        height: 100%;
+        box-shadow: 3px 3px 3px rgb(136, 136, 136);
+        text-align: center;
+        transition: 0.5s;
+    }
+    .recommend-song .slick-next{
+        right: 0;
+        z-index: 9;
+    }
+    .recommend-song .slick-prev{
+        left: -0px;
+        z-index: 9;
+    }
+    .recommend-song .slick-prev:before,
+    .recommend-song .slick-next:before{
+        font-size: 20px;
+        color: #a509f7;
+        z-index: 9;
+    }
+    .recommend-song .slick-dots{
+        z-index: 99;
+        bottom: 48px;
+    }
+    #slick-slide-control00::before,
+    #slick-slide-control01::before,
+    #slick-slide-control02::before{
+        color: #fbaf4b;
+    }
+    .slick-dotted .slick-current img {
+        transform: scale(1.17);
+        transition: 0.5s;
+    }
+    .recommend-song .slick .slide-item p:nth-of-type(1){
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .recommend-song .slick .slide-item p:nth-of-type(2){
+        font-size: 12px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    /* 노래추천 */
+    /* 내아티스트는 요즘 */
+    .myartist-news{
+        width: 100%;
+        height: 270px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .myartist-news .content-box{
+        width: 120px;
+        height: 200px;
+        position: relative;
+    }
+    .myartist-news .content-box a img{
+        width: 100%;
+        height: 100%;
+    }
+    .myartist-news .content-box a .top{
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    .myartist-news .content-box a .top p{
+        color: #fff;
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .myartist-news .content-box a .bottom{
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.411);
+    }
+    .myartist-news .content-box a .bottom p{
+        color: #fff;
+        display: inline-block;
+        width: 110px;
+        font-size: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: bold;
+        margin-left: 3px;
+    }
+    .myartist-news .content-box a .bottom p:nth-of-type(1){
+        margin-top: 5px;
+    }
+    .myartist-news .content-box a .bottom p:nth-of-type(2){
+        font-size: 10px;
+        font-weight: normal;
+    }
+    /* 내아티스트는 요즘 */
+    /* 내취향저격앨범커버 */
+    .recommend-cover{
+        width: 100%;
+        height: 260px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        position: relative;
+        /* overflow: hidden; */
+    }
+    .recommend-cover .recommend{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .recommend-cover > img{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: 83px;
+        left: 155px;
+    }
+    .recommend-cover .recommend .content-box > img{
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        bottom: 110px;
+        left: 67px;
+        display: block;
+    }
+    .recommend-cover .recommend .content-box .text p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .recommend-cover .recommend .content-box .text p:nth-of-type(1){
+        margin-top: 160px;
+    }
+    .recommend-cover .recommend .content-box .text p:nth-of-type(2){
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .recommend-cover .swiper-pagination{
+        margin-bottom: 77px;
+    }
+    .recommend-cover .swiper-button-next,
+    .recommend-cover .swiper-button-prev{
+        margin-top: -70px;
+        color: #a509f7;
+    }
+    .recommend-cover .swiper-button-next::after,
+    .recommend-cover .swiper-button-prev::after{
+        font-size: 30px;
+    }
+    .recommend-cover .swiper-pagination-bullet{
+        background-color: #fbaf4b;
+    }
+    .recommend-cover .swiper-pagination-bullet-active{
+        /* color: #fff; */
+        background-color: #fbaf4b;
+    }
+    /* 활성화
+    /* 내취향저격앨범커버 */
+    /* 뮤비 */
+    .hot-mv{
+        width: 100%;
+        height: 220px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .hot-mv .mv{
+        position: relative;
+    }
+    .hot-mv .mv .content-box{
+        text-align: center;
+    }
+    .hot-mv .mv .content-box img{
+        width: 220px;
+        height: 115px;
+        position: relative;
+    }
+    .hot-mv .mv .content-box .text p{
+        width: 100%;
+        font-size: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .hot-mv .mv .content-box .text p:nth-of-type(1){
+        font-weight: bold;
+    }
+    .mv .swiper-pagination{
+        top: 60px!important;
+        color: #fbaf4b!important;
+    }
+    .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+        background-color: #fbaf4b!important;
+    }
+    /* 뮤비 */
+    /* 푸터 */
+    .footer{
+        width: 100%;
+        height: 130px;
+        background-color: #363636;
+        margin-top: 20px;
+    }
+    .footer .top{
+        height: 40px;
+        padding: 10px 10px;
+    }
+    .footer .top img{
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+    }
+    .footer .top .button{
+        position: relative;
+    }
+    .footer .top .button p{
+        color: #fff;
+        margin-top: -30px;
+        text-align: right;
+        margin-right: 18px;
+    }
+    ion-icon[name="chevron-up-circle-outline"]{
+        color: #fff;
+        font-size: 19px;
+        position: absolute;
+        right: 50px;
+        top: -0.1px;
+    }
+    .footer .bottom{
+    height: 40px;
+        text-align: center;
+    }
+    .footer .bottom ul li{
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+    }
+    .footer .bottom ul li a{
+        font-size: 12px;
+        color: #fff;
+    }
+    ion-icon[name="chevron-down-outline"]{
+        color: #fff;
+        position: absolute;
+        right: -13px;
+        top: 6px;
+        font-size: 13px;
+    }
+    .footer .click{
+        width: 100%;
+        height: 110px;
+        background-color: #363636;
+        margin-top: 10px;
+        text-align: center;
+        display: none;
+    }
+    .footer .click p{
+        font-size: 12px;
+        color: #fff;
+    }
+    /* 푸터 */
+    /* 햄버거박스 */
+    .bgc{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.705);
+        left: 0;
+        top: 0;
+        z-index: 9;
+        display: none;
+    }
+    .hamburger-box{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 99;
+        transition: 1s;
+    }
+    .hamburger-box.on{
+        left: 0;
+    }
+    .hamburger-box .content-box{
+        width: 340px;
+        height: 100%;
+        background-color: #fff;
+        left: -100%;
+    }
+    .hamburger-box .content-box > img{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 8px;
+        top: 15px;
+    }
+    .hamburger-box .content-box .plofile{
+        width: 100%;
+        height: 140px;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+    .hamburger-box .content-box .plofile .left img{
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    .hamburger-box .content-box .plofile .right{
+        padding-top: 30px;
+        padding-left: 110px;
+    }
+    .hamburger-box .content-box .plofile .right p{
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .hamburger-box .content-box .plofile .right p:nth-of-type(1){
+        font-size: 16px;
+        margin-left: 2px;
+        font-weight: bold;
+        padding-bottom: 4px;
+    }
+    .hamburger-box .content-box .menu{
+        width: 100%;
+        height: 450px;
+        padding-left: 20px;
+    }
+    .hamburger-box .content-box .menu p{
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    .hamburger-box .content-box .menu p:nth-of-type(7){
+        margin-top: 45px;
+    }
+    .hamburger-box .content-box .content{
+        width: 100%;
+        height: 222px;
+        padding: 27px 4px;
+    }
+    .hamburger-box .content-box .content .box{
+        height: 100%;
+        float: left;
+        margin-left: 50px;
+        text-align: center;
+    }
+    .hamburger-box .content-box .content .box img{
+        width: 70px;
+        height: 70px;
+    }
+    .hamburger-box .content-box .content .box p{
+        padding-top: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /* 햄버거박스 */
+    /* 검색버튼 */
+    .search-box{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.705);
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 99;
+    }
+    .search-box > img{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+    }
+    .search-box .content{
+        width: 350px;
+        height: 70px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 39px;
+        position: relative;
+    }
+    .search-box .content .txt{
+        width: 75%;
+        height: 70%;
+        border-bottom: 1px solid #000;
+        margin-left: 30px;
+    }
+    .search-box .content .txt input{
+        margin-top: 25px;
+        font-size: 18px;
+        border: 0px;
+    }
+    .search-box .content > img{
+        width: 26px;
+        height: 23px;
+        position: absolute;
+        right: 26px;
+        top: 20px;
+    }
+    /* 검색버튼 */
+    /* 플레이 픽스 */
+    .play{
+        height: 50px;
+        position: fixed;
+        bottom: 10px;
+        z-index: 99;
+        left: 200%;
+    }
+    .play.on{
+        left: 0;
+    }
+    .play .content-box{
+        width: 350px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        box-shadow: 6px 6px 6px rgba(126, 126, 126, 0.349);
+    }
+    .play .content-box > img{
+        width: 45px;
+        height: 45px;
+        margin-left: 20px;
+        margin-top: 8px;
+        float: left;
+    }
+    .play .content-box .content{
+        margin-left: 80px;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .play .content-box .content p:nth-of-type(1){
+        font-size: 12px;
+        display: inline;
+    }
+    .play .content-box .content p:nth-of-type(2){
+        font-size: 11px;
+        color: #363636;
+        width: 180px;
+        display: inline-block;
+    }
+    .play .content-box .button img{
+        float: left;
+    }
+    .play .content-box .button img:nth-of-type(1){
+        width: 13px;
+        height: 23px;
+        position: absolute;
+        bottom: 18px;
+        left: 270px;
+    }
+    .play .content-box .button img:nth-of-type(2){
+        width: 25px;
+        height: 19px;
+        position: absolute;
+        bottom: 20px;
+        left: 300px;
+    }
+    /* 플레이 픽스 */
+    /* 픽스 아이콘 */
+    .fix-icon{
+        height: 100px;
+        bottom: 20px;
+        right: 0;
+        position: fixed;
+        z-index: 99;
+    }
+    .fix-icon .app img{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        bottom: 75px;
+    }
+    .fix-icon .play-b img{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        bottom: 15px;
+    }
+    /* 픽스 아이콘 */
+    /* 팝업 */
+    /* .modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+    } */
+    .modal .popup{
+        width: 300px;
+        height: 400px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+    }
+    .modal .popup .x{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .modal .popup .p{
+        width: 100%;
+        height: 100%;
+    }
+    .modal .popup .text{
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 45px;
+        background-color: #d07bff;
+        border: 3px solid #8f00df;
+        border-radius: 20px;
+    }
+    .modal .popup .text{
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 45px;
+    }

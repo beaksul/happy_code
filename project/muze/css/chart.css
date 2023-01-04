@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.muze-nav ul li:nth-of-type(3) a{
+    color: #ffffff;
+    font-weight: bold;
+}
+.muze-nav ul li:nth-of-type(3)::after{
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 18px;
+    width: 46px;
+    height: 3px;
+    background-color: #ffffff;
+}
+.muze-wrap{
+    width: 355px;
+    height: 100%;
+    margin: 0 auto;
+}
+.muze-wrap > .muze-chart{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.muze-chart .title p{
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+    display: inline-block;
+    text-align: center;
+    color: #646464;
+}
+.muze-chart > .title p:nth-of-type(2){
+    text-align: right;
+    color: #000;
+    margin-bottom: 13px;
+}
+.muze-chart .top100-list{
+    width: 100%;
+    height: 58px;
+}
+.muze-chart .top100-list .number{
+    font-weight: bold;
+    display: inline;
+    float: left;
+    padding-top: 15px;
+    margin-left: -5px;
+}
+.muze-chart .top100-list:nth-of-type(1) .number,
+.muze-chart .top100-list:nth-of-type(2) .number,
+.muze-chart .top100-list:nth-of-type(3) .number,
+.muze-chart .top100-list:nth-of-type(4) .number,
+.muze-chart .top100-list:nth-of-type(5) .number,
+.muze-chart .top100-list:nth-of-type(6) .number,
+.muze-chart .top100-list:nth-of-type(7) .number,
+.muze-chart .top100-list:nth-of-type(8) .number,
+.muze-chart .top100-list:nth-of-type(9) .number,
+.muze-chart .top100-list:nth-of-type(10) .number{
+    font-weight: bold;
+    display: inline;
+    float: left;
+    padding-top: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.muze-chart .top100-list .p-title{
+    font-weight: bold;
+    font-size: 12px;
+    width: 190px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.muze-chart .top100-list .p-artist{
+    font-size: 11px;
+    width: 280px;
+    color: #646464;
+}
+.muze-chart .top100-list .p-title,
+.muze-chart .top100-list .p-artist{
+    padding-top: 9px;
+}
+.muze-chart .top100-list .album{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 12px;
+}
+.muze-chart .top100-list img{
+    float: right;
+    width: 15px;
+    height: 20px;
+    margin-top: -29px;
+}
+.muze-chart span{
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+    color: #646464;
+    font-size: 13px;
+}
